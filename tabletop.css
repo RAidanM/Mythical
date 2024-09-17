@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(3, 54, 13);
+}
+
+.card{
+    background-color: rgb(230, 226, 218);
+    background-image: url("http://127.0.0.1:5500/deadpoolcard.png");
+    background-size: 100%;
+
+    height: 275px;
+    width: 200px;
+
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
