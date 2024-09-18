@@ -4,7 +4,6 @@ offsetX = 0;
 offsetY = 0;
 
 function grab(event, cardElement){
-    console.log("grabbed");
     grabbedCard = cardElement;
     isGrabbed = true;
 
@@ -22,6 +21,7 @@ function move(event){
     if(isGrabbed && grabbedCard){
         grabbedCard.style.left = `${event.clientX - offsetX}px`;
         grabbedCard.style.top = `${event.clientY - offsetY}px`;
+
     }
 }
 
