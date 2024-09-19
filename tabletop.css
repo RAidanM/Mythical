@@ -4,15 +4,38 @@ body{
 
 .card{
     background-color: rgb(230, 226, 218);
-    background-image: url("http://127.0.0.1:5500/deadpoolcard.png");
-    background-size: 100%;
+    box-shadow:3px 3px 0px 0px rgba(0, 0, 0, 0.224);
+    /*background-image: url("http://127.0.0.1:5500/deadpoolcard.png");*/
+    /*background-size: 100%;*/
+    height: 275px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid rgb(0,0,0);
+
+    color: rgb(149, 34, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    
+
+    cursor:grab;
+    
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.pile{
+    background-color: rgb(230, 226, 218);
+    box-shadow: 5px 5px 0px 0px rgb(172, 166, 162),
+                10px 10px 0px 0px rgb(134, 126, 122);
+    height: 275px;
+    width: 200px;
+    border-radius: 10px;
 
     cursor:grab;
 
-    height: 275px;
-    width: 200px;
-
-    border-radius: 10px;
     position: absolute;
     top: 100px;
     left: 100px;
