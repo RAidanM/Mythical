@@ -1,11 +1,14 @@
-isGrabbed = false;
-grabbedCard = null;
-offsetX = 0;
-offsetY = 0;
+let isGrabbed = false;
+let grabbedCard = null;
+let offsetX = 0;
+let offsetY = 0;
+let zIndex = 1000;
 
 function grab(event, cardElement){
     grabbedCard = cardElement;
     isGrabbed = true;
+
+    grabbedCard.style.zIndex = zIndex++;
 
     const bounds = cardElement.getBoundingClientRect();
     offsetX = event.clientX - bounds.left;
@@ -13,6 +16,7 @@ function grab(event, cardElement){
 
     document.addEventListener("mousemove",move);
     document.addEventListener("mouseup",drop);
+    
 
     event.preventDefault(); //avoids text selection
 }
