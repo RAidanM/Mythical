@@ -22,8 +22,7 @@ body{
     cursor:grab;
     
     position: absolute;
-    top: 100px;
-    left: 100px;
+
 }
 
 .pile{
@@ -37,6 +36,4 @@ body{
     cursor:grab;
 
     position: absolute;
-    top: 100px;
-    left: 100px;
 }
