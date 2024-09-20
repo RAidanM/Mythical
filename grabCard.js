@@ -21,7 +21,7 @@ function grab(event, cardElement){
     event.preventDefault(); //avoids text selection
 }
 
-function move(event){
+function move(){
     if(isGrabbed && grabbedCard){
         grabbedCard.style.left = `${event.clientX - offsetX}px`;
         grabbedCard.style.top = `${event.clientY - offsetY}px`;

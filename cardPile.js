@@ -1,12 +1,23 @@
-let card_value = 1;
-
 function takeCard(event, pileElement){
-    console.log("new card");
+    
+    //grab card info
+    let cards = pileElement.getAttribute('data-cards').split(",");
+    console.log(typeof cards);
+    console.log(cards.length);
+    if (cards.at(0)==''){return"Empty Pile";}
+
+    //create new card
     let newCard = document.createElement('div');
     newCard.classList.add("card");
-    newCard.innerHTML = card_value++;
     newCard.style.top = pileElement.style.top;
     newCard.style.left = pileElement.style.left;
+
+    //assign card value
+    newCard.innerHTML = cards.shift();
+
+    //update pile info
+    pileElement.setAttribute('data-cards', cards);
+    
 
     document.body.appendChild(newCard);
 
