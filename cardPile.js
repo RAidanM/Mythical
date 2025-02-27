@@ -18,13 +18,17 @@ function takeCard(event, pileElement){
     //update pile info
     pileElement.setAttribute('data-cards', cards);
     
-
+ 
     document.body.appendChild(newCard);
 
     newCard.addEventListener('mousedown', function(event) {
         grab(event, newCard);
     });
     grab(event, newCard);
+}
+
+function putCard(event, pileElement){
+    
 }
 
 document.querySelectorAll('.pile').forEach(pile => {
